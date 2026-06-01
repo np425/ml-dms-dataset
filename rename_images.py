@@ -21,7 +21,7 @@ def main(args):
         image_id = datum['openimages_metadata']['ImageID']
         subset = datum['openimages_metadata']['Subset']
 
-        src = os.path.join(data_path, subset, f'{image_id}.jpg')
+        src = os.path.join(data_path, 'images', subset, f'{image_id}.jpg')
         dst = os.path.join(data_path, datum['image_path'])
 
         if not os.path.exists(src):
